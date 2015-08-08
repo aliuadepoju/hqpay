@@ -189,7 +189,7 @@
 				},
 				callback: function(res){
 					$("div.disable").hide();
-					//$("form").get(0).reset();
+					$("form").get(0).reset();
 					$("button#submit").html("Pay");
 					var data=JSON.parse(res);
 					$("#err").show().html(template("<div class='alert alert-%type%'>%msg%</div>",{"type":((data["status"]===true)?("success"):("danger")),"msg":data["msg"]}));
