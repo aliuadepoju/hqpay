@@ -160,13 +160,12 @@
 								if(err==null){
 									transaction_data["gateway"]="braintree";
 									transaction_data["nonce"]=nonce;
-							 		 console.log(err,' ',nonce);
+							 		// console.log(err,' ',nonce);
 					        		$("#pay_iframe").get(0).src="process.php?data="+JSON.stringify(transaction_data);
 					        		transaction_data={};
 								}
 								else{
 									throw "An unknown error has occurred";
-									// console.log(err,' ',nonce);
 									}
 							
 						});
@@ -177,7 +176,7 @@
 					
 				} catch (e) {
 					$("div.disable").hide();
-					$("#err").show().html(template("<div class='alert alert-warning'>%msg%</div>",{"msg":((e.toString().indexOf('braintree') != -1)?('Check your internet connection or refresh page'):(e))}));
+					$("#err").show().html(template("<div class='alert alert-warning'>%msg%</div>",{"msg":((e.toString().indexOf('braintree') != -1)?('An unknown error has occurred'):(e))}));
 					$("button#submit").html("Pay");
 					setTimeout(function(){
 						$("#err").hide().html("");
@@ -189,7 +188,7 @@
 				},
 				callback: function(res){
 					$("div.disable").hide();
-					//$("form").get(0).reset();
+					$("form").get(0).reset();
 					$("button#submit").html("Pay");
 					var data=JSON.parse(res);
 					$("#err").show().html(template("<div class='alert alert-%type%'>%msg%</div>",{"type":((data["status"]===true)?("success"):("danger")),"msg":data["msg"]}));
