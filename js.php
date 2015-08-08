@@ -137,13 +137,13 @@
 
 					transaction_data["card_type"]=this.cardType(transaction_data["card_number"]);
 
-					/* if(transaction_data["card_type"].isEmpty() || !this.isValidCreditCard(transaction_data["card_type"],transaction_data["card_number"])) throw "The specified card number is invalid";	
+					if(transaction_data["card_type"].isEmpty() || !this.isValidCreditCard(transaction_data["card_type"],transaction_data["card_number"])) throw "The specified card number is invalid";	
 					if(!this.isValidFigure(transaction_data["price"].replace(',','')))	throw "Invalid figure specified as price";
 					if(!this.isValidName(transaction_data["customer_name"])) throw "The specified customer name contain unsupported characters";
 					if(!this.isValidName(transaction_data["cardholder_name"])) throw "The specified cardholder name contain unsupported characters";
 					if(!this.isValidCVV(transaction_data["card_cvv"])) throw "Invalid CVV number";
 					if(!this.isValidExpiry(transaction_data["card_expiry"])) throw "Card expiration must be numeric <small>(MM/YYYY)</small>";
-					 */
+					 
 					//Use paypal gateway
 					if(transaction_data["card_type"]=="AMEX" && transaction_data["currency"] != "USD") throw "AMEX is possible to use only for USD";
 
