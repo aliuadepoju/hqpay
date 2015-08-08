@@ -70,10 +70,12 @@ try {
    <select data-hq-name="currency">
    <option selected disabled>Currency</option>
   <option value="USD">USD</option>
+   <option value="EUR">EUR</option>
    <option value="THB">THB</option>
    <option value="HKD">HKD</option>
    <option value="SGD">SGD</option>
    <option value="AUD">AUD</option>
+  
    </select>
    </div>
     </div>
