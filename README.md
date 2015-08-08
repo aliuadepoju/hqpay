@@ -26,7 +26,11 @@ TECHNOLOGIES
  
 In regards to, How would you handle security for saving credit cards?
 
- - Encryption of card details
+
+SECURITY MEASURES
+-----------------
+
+ - Encryption of credit card details
  - Secure connection (SSL) during data transmission
  - Restrict access to credit card database
  - and more
