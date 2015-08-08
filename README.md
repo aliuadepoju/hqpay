@@ -1,10 +1,9 @@
 #HQPay
-Payment Library
+Payment Gateway Library - Round #1 of interview for PHP developer position
 
 
-
-INSTALLATION
-------------
+DATABASE SET UP
+---------------
 
  - Locate "config.db.php" and "hqpay.sql" files in root directory
  
