@@ -72,9 +72,12 @@ class Gateway{
 		}
 		elseif ($e instanceof PayPal\Exception\PayPalConnectionException) {
 			$res=json_decode($e->getData(),1);
+			/* print("<pre>");
+			print_r($res);
+			print("</pre>"); */
 			$this->save($data,__FUNCTION__, $res, 0);
 			$msg=array_shift(isset($res["details"])?$res["details"]:[]);
-			return json_encode(["status"=>false,"msg"=>(empty($msg["issue"]))?("Unable to process your request, please take a second look at information provided or internet connection"):(sprintf("%s %s",["cvv2"=>"CVV2","expire_year"=>"Card expiration","credit_card"=>"","type"=>"Invalid credit card number or","number"=>"Credit card number"][end(explode(".",$msg["field"]))],strtolower($msg["issue"])))]);
+			return json_encode(["status"=>false,"msg"=>(empty($msg["issue"]))?("An unknown error has occurred"):(sprintf("%s %s",["cvv2"=>"CVV2","expire_year"=>"Card expiration","credit_card"=>"","type"=>"Invalid credit card number or","number"=>"Credit card number"][end(explode(".",$msg["field"]))],strtolower($msg["issue"])))]);
 		}
 		else {
 			throw $e;
