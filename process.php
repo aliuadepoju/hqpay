@@ -1,5 +1,5 @@
 <?php
-ini_set("display_errors",1);
+ini_set("display_errors",0);
 
 if(isset($_GET["data"]) && !empty($_GET["data"])){
 	$data=json_decode($_GET["data"],1);
@@ -7,12 +7,6 @@ if(isset($_GET["data"]) && !empty($_GET["data"])){
 	$data["first_name"]=array_shift($splitCustomerName);
 	$data["last_name"]=end($splitCustomerName);
 	
-	/* 
-	print("<pre>");
-	print_r($data);
-	print("</pre>");
-	exit;
-	 */
 	include_once 'Gateway.php';
 	switch ($data["gateway"]) {
 		case "paypal":

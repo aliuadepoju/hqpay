@@ -1,4 +1,4 @@
- <script>
+ <script type="text/javascript">
     Array.prototype.in_array=function(v){
 		 var bool=false;
 		for(var i=0;i<this.length;i++){
@@ -12,14 +12,8 @@
 	 function template(tmpl,data){
          return tmpl.replace(/%(\w*)%/g,function(m,key){return data.hasOwnProperty(key)?data[key]:"";});
      }
+
 	 
-	 var isDefined=function(obj){
-	    	if(obj==null || typeof obj=="undefined"){
-	    		return false;
-	    	}
-	    	return true;
-	    };
-	    
 	    String.prototype.trim=function(){return this.replace(/^[\s\xa0]+|[\s\xa0]+$/g, '');};
 	    String.prototype.isEmpty=function(){
 	    	if(this.trim()=='' || this.trim()==null) {
