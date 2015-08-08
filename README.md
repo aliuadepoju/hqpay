@@ -19,16 +19,13 @@ TECHNOLOGIES
 ------------
  
  - Languages: JavaScript/JQuery, PHP
- - Payment Gateway: paypal, Braintree
+ - Payment Gateways: paypal, Braintree
  - Others: composer, PHPUnit
  
  
  
 
-
-
-
-In regards to, How would you handle security for saving credit cards?
+#In regards to, How would you handle security for saving credit cards?
 
 
 SECURITY MEASURES
