@@ -65,7 +65,7 @@ try {
   <div class="form-group">
     <label>Price</label>
    <div class="input-group">
-   <input class="form-control" type="text" data-hq-name="price" placeholder="0.00">
+   <input class="form-control" type="text" data-hq-name="price" onmouseover="this.focus()" placeholder="0.00">
    <div class="input-group-addon">
    <select data-hq-name="currency">
    <option selected disabled>Currency</option>
