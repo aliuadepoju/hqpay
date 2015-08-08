@@ -93,7 +93,7 @@ try {
   <div class="panel-body">
   <div class="form-group">
     <label>Card Holder Name</label>
-    <input type="text" data-hq-name="cardholder_name" onmouseover="this.focus()" class="form-control" placeholder="Firstname Lastname">
+    <input type="text" data-hq-name="cardholder_name" onmouseover="this.focus()" class="form-control">
   </div>
   
   <div class="form-group">
