@@ -9,10 +9,17 @@
 		return (bool==true)?(true):(false);
 	 };
 
+	 
 	 function template(tmpl,data){
          return tmpl.replace(/%(\w*)%/g,function(m,key){return data.hasOwnProperty(key)?data[key]:"";});
      }
 
+	 var isDefined=function(obj){
+	    	if(obj==null || typeof obj=="undefined"){
+	    		return false;
+	    	}
+	    	return true;
+	    };
 	 
 	    String.prototype.trim=function(){return this.replace(/^[\s\xa0]+|[\s\xa0]+$/g, '');};
 	    String.prototype.isEmpty=function(){
@@ -125,7 +132,7 @@
 
 					for (var i=0;i<fields.length;i++){
 						ctrl_val=$("[data-hq-name='"+fields[i]+"']").val();
-						if(ctrl_val.isEmpty()) throw "All fields are required";
+						if(!isDefined(ctrl_val) || ctrl_val.isEmpty()) throw "All fields are required";
 						transaction_data[fields[i]]=ctrl_val;
 					}
 
