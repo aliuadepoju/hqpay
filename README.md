@@ -1,8 +1,8 @@
-#HQPay
-Payment Gateway Library - Round #1 of interview for PHP developer position
+#Round #1 of interview for PHP developer position
 
+Payment Gateway Library
 
-DATABASE SET UP
+DATABASE SET-UP
 ---------------
 
  - Locate "config.db.php" and "hqpay.sql" files in root directory
@@ -34,5 +34,4 @@ SECURITY MEASURES
  - Secure connection (SSL) during data transmission
  - Restrict access to credit card database
  - and more
-
 
