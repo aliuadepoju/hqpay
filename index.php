@@ -1,5 +1,5 @@
 <?php
-ini_set("display_errors",1);
+ini_set("display_errors",0);
 include_once 'vendor/autoload.php';
 
 try {
@@ -14,7 +14,7 @@ try {
 <head>
    <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>HQPay | Payment Library</title>
+    <title>Payment Gateway Library</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
       <link href="assets/css/bootstrap.css" rel="stylesheet">
@@ -82,7 +82,7 @@ try {
   
   <div class="form-group">
     <label>Customer Name</label>
-    <input type="text" class="form-control" data-hq-name="customer_name" placeholder="Firstname Lastname">
+    <input type="text" class="form-control" data-hq-name="customer_name" onmouseover="this.focus()" placeholder="Firstname Lastname">
   </div>
   
   </div>
@@ -93,19 +93,19 @@ try {
   <div class="panel-body">
   <div class="form-group">
     <label>Card Holder Name</label>
-    <input type="text" data-hq-name="cardholder_name" class="form-control" placeholder="Firstname Lastname">
+    <input type="text" data-hq-name="cardholder_name" onmouseover="this.focus()" class="form-control" placeholder="Firstname Lastname">
   </div>
   
   <div class="form-group">
    <div class="row">
    <div class="col-xs-9">
     <label>Card Number</label>
-    <input type="text" data-hq-name="card_number" class="form-control">
+    <input type="text" data-hq-name="card_number" onmouseover="this.focus()" class="form-control">
  
    </div>
    <div class="col-xs-3">
     <label>CVV</label>
-    <input type="text" data-hq-name="card_cvv" class="form-control">
+    <input type="text" data-hq-name="card_cvv"  onmouseover="this.focus()" class="form-control">
  
    </div>
    </div>
@@ -114,7 +114,7 @@ try {
   
    <div class="form-group">
     <label>Expiration</label>
-    <input type="text" data-hq-name="card_expiry" class="form-control" placeholder="MM/YYYY">
+    <input type="text" data-hq-name="card_expiry"  onmouseover="this.focus()" class="form-control" placeholder="MM/YYYY">
   </div>
   
      
