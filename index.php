@@ -81,7 +81,7 @@ try {
   </div>
   
   <div class="form-group">
-    <label>Customer name</label>
+    <label>Customer Name</label>
     <input type="text" class="form-control" data-hq-name="customer_name" placeholder="Firstname Lastname">
   </div>
   
@@ -92,14 +92,14 @@ try {
   </div>
   <div class="panel-body">
   <div class="form-group">
-    <label>Holder name</label>
+    <label>Card Holderame</label>
     <input type="text" data-hq-name="cardholder_name" class="form-control" placeholder="Firstname Lastname">
   </div>
   
   <div class="form-group">
    <div class="row">
    <div class="col-xs-9">
-    <label>Card number</label>
+    <label>Card Number</label>
     <input type="text" data-hq-name="card_number" class="form-control">
  
    </div>
