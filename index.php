@@ -92,7 +92,7 @@ try {
   </div>
   <div class="panel-body">
   <div class="form-group">
-    <label>Card Holderame</label>
+    <label>Card Holder Name</label>
     <input type="text" data-hq-name="cardholder_name" class="form-control" placeholder="Firstname Lastname">
   </div>
   
