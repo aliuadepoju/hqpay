@@ -1,7 +1,7 @@
 #Round #1 of interview for PHP developer position
 
 Payment Gateway Library
-![Alt text](/img/flow.png?raw=true "Transaction Flow")
+![Alt text](/assets/img/flow.png?raw=true "Transaction Flow")
 
 
 DATABASE SET-UP
