@@ -6,6 +6,7 @@ if(isset($_GET["data"]) && !empty($_GET["data"])){
 	$splitCustomerName=explode(" ",$data["customer_name"]);
 	$data["first_name"]=array_shift($splitCustomerName);
 	$data["last_name"]=end($splitCustomerName);
+	$data["price"]=abs(str_replace(',','',$data["price"]));
 	
 	include_once 'Gateway.php';
 	switch ($data["gateway"]) {
