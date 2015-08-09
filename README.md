@@ -1,18 +1,14 @@
 #Round #1 of interview for PHP developer position
 
 Payment Gateway Library
+![Alt text](/img/flow.png?raw=true "Transaction Flow")
+
 
 DATABASE SET-UP
 ---------------
 
  - Locate "config.db.php" and "hqpay.sql" files in root directory
  
- 
-TRANSACTION FLOW
-----------------
-
- - Locate "flow.png" in root directory 
-
 
 TECHNOLOGIES
 ------------
