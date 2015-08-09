@@ -65,9 +65,9 @@ try {
   <div class="form-group">
     <label>Price</label>
    <div class="input-group">
-   <input class="form-control" type="text" data-hq-name="price" onmouseover="this.focus()" placeholder="0.00">
+   <input class="form-control" type="text" data-hq-name="price" required="required" onmouseover="this.focus()" placeholder="0.00">
    <div class="input-group-addon">
-   <select data-hq-name="currency">
+   <select data-hq-name="currency" required="required">
    <option selected disabled>Currency</option>
   <option value="USD">USD</option>
    <option value="EUR">EUR</option>
@@ -84,7 +84,7 @@ try {
   
   <div class="form-group">
     <label>Customer Name</label>
-    <input type="text" class="form-control" data-hq-name="customer_name" onmouseover="this.focus()" placeholder="Firstname Lastname">
+    <input type="text" class="form-control" data-hq-name="customer_name" required="required" title="Firstname Lastname" onmouseover="this.focus()" placeholder="Firstname Lastname">
   </div>
   
   </div>
@@ -95,19 +95,19 @@ try {
   <div class="panel-body">
   <div class="form-group">
     <label>Card Holder Name</label>
-    <input type="text" data-hq-name="cardholder_name" onmouseover="this.focus()" class="form-control">
+    <input type="text" data-hq-name="cardholder_name" required="required" onmouseover="this.focus()" class="form-control">
   </div>
   
   <div class="form-group">
    <div class="row">
    <div class="col-xs-9">
     <label>Card Number</label>
-    <input type="text" data-hq-name="card_number" onmouseover="this.focus()" class="form-control">
+    <input type="text" data-hq-name="card_number" required="required" onmouseover="this.focus()" class="form-control">
  
    </div>
    <div class="col-xs-3">
     <label>CVV</label>
-    <input type="text" data-hq-name="card_cvv"  onmouseover="this.focus()" class="form-control">
+    <input type="text" data-hq-name="card_cvv" required="required" onmouseover="this.focus()" class="form-control">
  
    </div>
    </div>
@@ -116,7 +116,7 @@ try {
   
    <div class="form-group">
     <label>Expiration</label>
-    <input type="text" data-hq-name="card_expiry"  onmouseover="this.focus()" class="form-control" placeholder="MM/YYYY">
+    <input type="text" data-hq-name="card_expiry" required="required" onmouseover="this.focus()" class="form-control" placeholder="MM/YYYY">
   </div>
   
      
