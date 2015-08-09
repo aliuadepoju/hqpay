@@ -90,6 +90,8 @@ class Gateway{
 				include_once 'config.braintree.php';
 				$customer = Braintree_Customer::create(['firstName' => $first_name,'lastName' => $last_name]);
 				
+				if(!isset($nonce) || empty($nonce)) Throw New Exception("An unknown error has occurred");
+				
 				if($customer->success){
 					$transaction = Braintree_Transaction::sale([
 							'amount' => $price,'customerId' => $customer->customer->id,
